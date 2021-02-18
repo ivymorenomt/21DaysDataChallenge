@@ -29,5 +29,3 @@ x = 'string'
 y = 2021
 
 string_formating = f'This is a {x} format and the year is {y}.' #prints out 'This is a string format and the year is 2021."
-To read more on formatting strings in Python read this article.
-
