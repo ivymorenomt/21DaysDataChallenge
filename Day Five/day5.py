@@ -26,13 +26,13 @@ country_price_sum = sum(country_price)
 cheap = []
 expensive = []
 for i in range(len(cleaningsupplies_list)):
-    c = (country_price[i]/ city_price[i])
-    if c >= 1.1:
-        cheap.append(cleaningsupplies_list[i])
-        cheap.append(c)
-    else:
+    c = ((country_price[i] - city_price[i])/city_price[i])
+    if c > 0.1:
         expensive.append(cleaningsupplies_list[i])
         expensive.append(c)
+    elif c < 0.1:
+        cheap.append(cleaningsupplies_list[i])
+        cheap.append(c)
 
 print(f'Cheap Items: {cheap}')
 print(f'Expensive Items: {expensive}')
