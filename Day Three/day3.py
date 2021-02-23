@@ -28,4 +28,5 @@ print(new_shopping_list)
 
 # Solution
 paint_list = new_shopping_list[3:]
+print("Final Paint List:")
 print(paint_list)
