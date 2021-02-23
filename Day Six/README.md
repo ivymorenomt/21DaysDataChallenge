@@ -92,3 +92,10 @@ Total cost would be:
                else:
                     then total_cost + 2.1
         '''
+Answer is:  
+    
+    Q1: 28.39
+  
+    Q2: \$1.488
+  
+    Q3: \$148.80
